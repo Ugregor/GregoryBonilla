@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GregoryBonilla.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Inicio de Sesion" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+
+            <Grid BackgroundColor="Aqua" RowSpacing="2" ColumnSpacing="2">
+                <Label Grid.Row="0" Grid.Column="0" Text="Usuario: " />
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtUsu" Placeholder="Usario..." />
+                <Label Grid.Row="1" Grid.Column="0" Text="Contraseña: "/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtPass" Placeholder="Contraseña..." IsPassword="True"/>
+            </Grid>
+            <Button Text="Iniciar Sesion" x:Name="btnSesion" Clicked="btnSesion_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

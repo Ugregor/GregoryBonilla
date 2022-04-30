@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GregoryBonilla.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Cuotas" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Grid BackgroundColor="Aqua" RowSpacing="1" ColumnSpacing="2">
+                <Label Grid.Row="0" Grid.Column="0" Text="Usuario: "/>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblusu"/>
+            </Grid>
+            <Grid BackgroundColor="Aqua" RowSpacing="5" ColumnSpacing="2">
+                <Label Grid.Row="0" Grid.Column="0" Text="Nombre: " />
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNom" Placeholder="Nombre..." />
+                <Label Grid.Row="1" Grid.Column="0" Text="Cuota Inicial: "/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtCuota" Placeholder="Cuota Inicial..." Keyboard="Numeric"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Pagos Mensuales: "/>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtPagos"/>
+                <Label Grid.Row="3" Grid.Column="0" Text="Toal Pagar: "/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtTotal"/>
+                <Button Grid.Row="4" Grid.Column="1" Text="Calcular" x:Name="btnCalcular" Clicked="btnCalcular_Clicked"/>
+            </Grid>
+            <Button Text="Guardar" x:Name="btnGuardar" Clicked="btnGuardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

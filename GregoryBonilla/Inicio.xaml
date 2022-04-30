@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GregoryBonilla.Inicio">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Examen Parcial I" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        <Label Text="Desarrollado por:"/>
+        <Label Text="Gregory Josue Bonilla Londo"/>
+        <Label Text="Noveno Sistemas de Informacion"/>
+        <Label Text="Uisrael"/>
+        <Button x:Name="btnSig" Text="Iniciar" Clicked="btnSig_Clicked"/>
+    </StackLayout>
+</ContentPage>
